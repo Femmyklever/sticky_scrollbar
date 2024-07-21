@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body{
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+p{
+
+  font-size: 16px;
+  margin-bottom: 1.3rem;
+}
+
+h2{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+}
+
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header{
+  background: linear-gradient(45deg, #f00, #00f);
+  color: white;
+  padding: 1.4rem;
+  margin-bottom: 1.3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header.transparent{
+background: linear-gradient(45deg, rgba(255,0,0, 0.9), rgba(0,0,255,0.9) );
+}
+
+ul{
+  list-style: none;
+}
+
+.main-nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.main-nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.section, .section{
+margin-bottom: 1.8rem;
+}
+
+.section h2 {
+  background: linear-gradient(45deg, #f00, #00f);
+  color: white;
+ margin-bottom: 1.5rem;
+}
+
+.main-footer{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  padding: 1.3rem;
+  background: linear-gradient(45deg, #f00, #00f) ;
+  color: white;
+}
+
+.main-footer div p{
+  margin-bottom: 0;
+}
+/* Media Queries for mobile Phone */
+
+@media (max-width: 768px){
+  .header{
+    margin-bottom: 0.4rem;
+  }
+.main-nav ul{
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.main-footer{
+  flex-direction: column;
+  gap: 1.5rem;
+}
+}
